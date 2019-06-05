@@ -20,7 +20,7 @@ def test_prediction(tab_training, tab_testing, fonction_prediction, training_siz
         # On enregistre le résultat de chaque match 
         if tab_testing['FTHG'][i]>tab_testing['FTAG'][i]:
             res = tab_testing['HomeTeam'][i]
-        if tab_testing['FTHG'][i]<tab_testing['FTAG'][i]:
+        elif tab_testing['FTHG'][i]<tab_testing['FTAG'][i]:
             res = tab_testing['AwayTeam'][i]
         else:
             res = 'Egalité'
